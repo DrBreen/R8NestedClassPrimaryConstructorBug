@@ -12,13 +12,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val clazz = SomeObject::class
-        Log.d("woodblocklog", "Class: $clazz")
+        Log.d("r8Bug", "Class: $clazz")
 
         val primaryConstructorInner = SomeObject.Inner::class.primaryConstructor
-        Log.d("woodblocklog", "Primary constructor: $primaryConstructorInner")
+        Log.d("r8Bug", "Primary constructor: $primaryConstructorInner")
 
         val primaryConstructorOuter = Outer::class.primaryConstructor
-        Log.d("woodblocklog", "Primary constructor: $primaryConstructorOuter")
+        Log.d("r8Bug", "Primary constructor: $primaryConstructorOuter")
     }
 
 }
